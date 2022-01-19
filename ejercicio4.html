@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 100%;
+            padding: 25px;
+            background-color: coral;
+            color: white;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="container2"></p>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul id="ul">
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol class="ol">
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+
+    </section>
+    <div class="footer">
+        <p>hola</p>
+    </div>
+    <script>
+        //Part One
+        //document.getElementById("container").style.fontSize = "20px"; 
+
+        function query() {
+
+            // Part two
+            //document.querySelector("#container").style.fontSize = "20px";
+
+            //Part three
+            // var x = document.querySelectorAll(".second"); //.style.fontSize = "40px";
+
+            // for (var i = 0; i < x.length; i++) {
+            //     x[i].style.color = "blue";
+            // }
+
+
+            // 4
+            // var y = document.querySelectorAll(".third");
+            // y[1].style.color = "red";
+
+            //5
+            //document.getElementById("container2").innerHTML = "Hello";
+
+            //6 
+            //var element = document.querySelector(".footer");
+            //element.classList.add("main");
+
+            //7
+            // var element = document.querySelector(".footer");
+            // element.classList.remove("main");
+
+            //8 
+            //var x = document.createElement("li");
+
+            //9
+            //var t = document.createTextNode("four");
+
+            //10
+            //x.appendChild(t);
+            //document.getElementById("ul").appendChild(x);
+
+            //Challenge Yourself.
+            //1
+            var x = document.querySelectorAll(".ol");
+
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.background = "green";
+            }
+
+            // 2
+            document.querySelector(".footer").remove();
+
+        }
+        query();
+
+
+    </script>
+
+</body>
+
+</html>
